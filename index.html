@@ -3,8 +3,8 @@
   <head>
     <style>
       body {
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 0 0 0 0;
+        font-family: "Trebuchet MS";
+        margin: 0;
       }
       .wrapper {
         display: flex;
@@ -20,27 +20,88 @@
         background-color: cornflowerblue;
         position: sticky;
         top: 0;
+        border-bottom: 2px solid black;
       }
       #main-content {
         margin: 0 5px 0 5px;
+      }
+      .section-header {
+        text-decoration: underline;
+      }
+      .sublist {
+        list-style: none;
+        padding-left: 15px;
+      }
+      .sublist > *{
+        margin-bottom: 5px;
+      }
+      span {
+        font-weight: bold;
+      }
+      .extra-bottom-padding {
+        padding-bottom: 5px;
       }
     </style>
   </head>
   <body>
     <div id="title" class="wrapper">
-      <h1 class="center-item"> Source Code and Natural Lang. Analysis Lab </h1>
+      <h1 class="center-item"> Source Code and Natural Language Analysis Lab </h1>
       <h2 class="center-item"> Team Lang Lab Lads </h2>
     </div>
     <div id="main-content" class="wrapper">
-      <h2> Time Logging </h2>
+      <h2 class="section-header"> Project Overview </h2>
+      <ul class="sublist">
+        <li>
+          <span> Synopsis: </span>
+        </li>
+        <li class="extra-bottom-padding">
+          <ul class="sublist">
+            <li> The goal of this project is to develop a tool which simplifies and formalizes the process of creating identifiers for programmers. The tool will analyze a user’s code and make suggestions as to how they can improve their naming practices to make the code more readable, thus leading to increased developer productivity and better accessibility of software development as a field. </li>
+          </ul>
+        </li>
+        <li>
+          <span> Sponsoring Organization: </span>
+        </li>
+        <li class="extra-bottom-padding">
+          <ul class="sublist">
+            <li> Source Code and Natural Language Analysis Laboratory (RIT SE Dept) </li>
+          </ul>
+        </li>
+        <li>
+          <span> Coach: </span>
+        </li>
+        <li class="extra-bottom-padding">
+          <ul class="sublist">
+            <li> Sophia Sandhu </li>
+          </ul>
+        </li>
+        <li>
+          <span> Team Members and Roles: </span>
+        </li>
+        <li>
+          <ul class="sublist">
+            <li> Adam Styer - Technical Lead for Jetbrains IDE Plugin work </li>
+            <li> Nirav Barman - Project Manager </li>
+            <li> Max Kipust - Technical Lead for Natural Language Processing work </li>
+            <li> Bryce Murphy - Communication Lead </li>
+          </ul>
+        </li>
+      </ul>
+      <h2 class="section-header"> Time Logging </h2>
       <iframe
-        width='100%'
         height = '500px'
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTNou0eR0WlR-AZfYkT6ab4G2YuxhgVZSkB_IKmgnZSFKRVNEwboqu48vPLzI19T5RaVF5NH1zneXQ8/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false">
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTNou0eR0WlR-AZfYkT6ab4G2YuxhgVZSkB_IKmgnZSFKRVNEwboqu48vPLzI19T5RaVF5NH1zneXQ8/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false">
       </iframe>
-      <h2> Artifacts </h2>
-      <a href="https://docs.google.com/document/d/1SNKVuJRBH74yuBR1x0kMN_7EORshOhCMFuqAa0kKYxU/edit?usp=sharing">4 ups</a>
-      <a href="https://docs.google.com/document/d/1xWiyhaMvzriQCVq8G5txpcTiHfTlin4SgefCj-_wLaM/edit?usp=sharing">Agendas</a>
+      <h2 class="section-header"> Artifacts </h2>
+      <ul class="sublist">
+        <li>
+          <a target="_blank" href="https://docs.google.com/document/d/1SNKVuJRBH74yuBR1x0kMN_7EORshOhCMFuqAa0kKYxU/edit?usp=sharing">Weekly 4-Ups</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://docs.google.com/document/d/1xWiyhaMvzriQCVq8G5txpcTiHfTlin4SgefCj-_wLaM/edit?usp=sharing">Agenda</a>
+          - Contains weekly sponsor and team meeting agendas and notes
+        </li>
+      </ul>
     </div>
   </body>
 </html>

@@ -2,22 +2,36 @@
 <html>
   <head>
     <style>
-      #main-wrapper {
+      body {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 0 0 0 0;
+      }
+      .wrapper {
         display: flex;
         flex-direction: column;
       }
-      #main-wrapper > * {
-        margin: 10px 0 10px 0;
+      .wrapper > * {
+        margin: 8px 0 8px 0;
       }
       .center-item {
         align-self: center;
       }
+      #title {
+        background-color: cornflowerblue;
+        position: sticky;
+        top: 0;
+      }
+      #main-content {
+        margin: 0 5px 0 5px;
+      }
     </style>
   </head>
   <body>
-    <div id="main-wrapper">
+    <div id="title" class="wrapper">
       <h1 class="center-item"> Source Code and Natural Lang. Analysis Lab </h1>
       <h2 class="center-item"> Team Lang Lab Lads </h2>
+    </div>
+    <div id="main-content" class="wrapper">
       <h2> Time Logging </h2>
       <iframe
         width='100%'

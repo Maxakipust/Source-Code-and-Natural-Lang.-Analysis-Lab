@@ -28,57 +28,62 @@
       .section-header {
         text-decoration: underline;
       }
-      .sublist {
+      .section-list, .sublist {
         list-style: none;
         padding-left: 15px;
+      }
+      .section-list > * {
+        margin-bottom: 10px;
       }
       .sublist > *{
         margin-bottom: 5px;
       }
-      span {
+      .bold {
         font-weight: bold;
       }
-      .extra-bottom-padding {
-        padding-bottom: 5px;
+      .underlined {
+        text-decoration: underline;
       }
     </style>
   </head>
+
   <body>
     <div id="title" class="wrapper">
       <h1 class="center-item"> Source Code and Natural Language Analysis Lab </h1>
       <h2 class="center-item"> Team Lang Lab Lads </h2>
     </div>
+
     <div id="main-content" class="wrapper">
       <h2 class="section-header"> Project Overview </h2>
-      <ul class="sublist">
+      <ul class="section-list">
         <li>
-          <span> Synopsis: </span>
+          <span class="bold"> Synopsis: </span>
         </li>
-        <li class="extra-bottom-padding">
+        <li>
           <ul class="sublist">
             <li> The goal of this project is to develop a tool which simplifies and formalizes the process of creating identifiers for programmers. The tool will analyze a user’s code and make suggestions as to how they can improve their naming practices to make the code more readable, thus leading to increased developer productivity and better accessibility of software development as a field. </li>
           </ul>
         </li>
         <li>
-          <span> Sponsoring Organization: </span>
+          <span class="bold"> Sponsoring Organization: </span>
         </li>
-        <li class="extra-bottom-padding">
+        <li>
           <ul class="sublist">
             <li> Source Code and Natural Language Analysis Laboratory (RIT SE Dept) </li>
           </ul>
         </li>
         <li>
-          <span> Coach: </span>
+          <span class="bold"> Coach: </span>
         </li>
-        <li class="extra-bottom-padding">
+        <li>
           <ul class="sublist">
             <li> Sophia Sandhu </li>
           </ul>
         </li>
         <li>
-          <span> Team Members and Roles: </span>
+          <span class="bold"> Team Members and Roles: </span>
         </li>
-        <li class="extra-bottom-padding">
+        <li>
           <ul class="sublist">
             <li> Adam Styer - Technical Lead for Jetbrains IDE Plugin work </li>
             <li> Nirav Barman - Project Manager </li>
@@ -87,7 +92,7 @@
           </ul>
         </li>
         <li>
-          <span> Development Methodology: </span>
+          <span class="bold"> Development Methodology: </span>
         </li>
         <li>
           <ul class="sublist">
@@ -95,19 +100,89 @@
           </ul>
         </li>
       </ul>
+
       <h2 class="section-header"> Time Logging </h2>
-      <iframe
-        height = '500px'
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTNou0eR0WlR-AZfYkT6ab4G2YuxhgVZSkB_IKmgnZSFKRVNEwboqu48vPLzI19T5RaVF5NH1zneXQ8/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false">
-      </iframe>
-      <h2 class="section-header"> Artifacts </h2>
       <ul class="sublist">
+        <li>
+          <iframe
+            height="300px"
+            width="1300px"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTNou0eR0WlR-AZfYkT6ab4G2YuxhgVZSkB_IKmgnZSFKRVNEwboqu48vPLzI19T5RaVF5NH1zneXQ8/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false">
+          </iframe>
+        </li>
+      </ul>
+      
+      <h2 class="section-header"> Metrics </h2>
+      <ul class="section-list">
+        <li>
+          <span class="bold"> Process Metrics: </span>
+        </li>
+        <ul class="sublist">
+          <li>
+            <span class="bold"> 1. Tickets completed per week </span>
+          </li>
+          <li>
+            <ul class="sublist">
+              <li> This will give us a rough estimate of productivity for each team member. It’s not completely accurate since each ticket will take a different amount of time to complete, but we will attempt to make tickets roughly the same amount of work. </li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold"> 2. Number of bug issues open per week </span>
+          </li>
+          <li>
+            <ul class="sublist">
+              <li> This will be a rough estimate of the quality of our code. We will need to make sure that we create tickets to address these bugs so they get resolved. To keep track of which tickets are bugs on our board, we will tag them appropriately. </li>
+            </ul>
+          </li>
+        </ul>
+        <li>
+          <span class="bold"> Project Metrics: </span>
+        </li>
+        <ul class="sublist">
+          <li>
+            <span class="bold"> 1. Recommendation accuracy on a standard dataset </span>
+          </li>
+          <li>
+            <ul class="sublist">
+              <li> This will tell us how well we have implemented the rules and recommendations. It will also give us an estimate of how complete the project is. </li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold"> 2. Time until recommendation on a standard dataset </span>
+          </li>
+          <li>
+            <ul class="sublist">
+              <li> These will give us an estimate of our code’s performance on a standardized test dataset. We should keep track of how much of the total time is spent waiting on the part of speech tagger to run, since that will most likely be the most time consuming although easiest to swap out as needed. </li>
+            </ul>
+          </li>
+        </ul>
+        <li>
+          <iframe
+            height="300px"
+            width="860px"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQS8oYOjXZG68Epv6OgHnoswBeO8d5co1mY_2JI8VM3aaxor_NI4Qn3cLJiy3ihcWQGo4RocVMVYeSg/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false">
+          </iframe>
+        </li>
+      </ul>
+
+      <h2 class="section-header"> Artifacts </h2>
+      <ul class="section-list">
         <li>
           <a target="_blank" href="https://docs.google.com/document/d/1SNKVuJRBH74yuBR1x0kMN_7EORshOhCMFuqAa0kKYxU/edit?usp=sharing">Weekly 4-Ups</a>
         </li>
         <li>
           <a target="_blank" href="https://docs.google.com/document/d/1xWiyhaMvzriQCVq8G5txpcTiHfTlin4SgefCj-_wLaM/edit?usp=sharing">Agenda</a>
           - Contains weekly sponsor and team meeting agendas and notes
+        </li>
+        <li>
+          <span class="underlined">Domain Model</span>
+        </li>
+        <li>
+          <ul class="sublist">
+            <li>
+              <img src="DomainModel.png" alt="Domain Model">
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
